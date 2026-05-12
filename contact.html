@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins';
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin-right: 20%;
+            padding: 0;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+            background-color: burlywood;
+        }
+
+        .contact-form {
+            background: #f4f4f9;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+.contact-form p{
+    color: brown;
+}
+
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group .error {
+            color: red;
+            font-size: 12px;
+        }
+        .footnav{
+    margin: 30px 0;
+    text-align: center;
+}
+.footnav ul{
+    justify-content: center;
+    justify-items: flex-start;
+}
+.footnav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footnav ul li a:hover{
+    opacity: 1;
+}
+.con{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conmain{
+    max-width: 800px;
+    text-align: center;
+}
+.conmain h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.conmain p{
+    font-weight: 300;
+    color: #fff
+}
+.concon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.coninfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.conbox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.conicon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.context{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.context h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+</style>
+</head>
+<body>
+    <section class="con">
+        <div class="conmain">
+            <h3>Contact Us</h3>
+            <p>Get in touch with us</p>
+        </div>
+        <div class="concon">
+            <div class="coninfo">
+                <div class="conbox">
+                    <div class="conicon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="context">
+                        <h3>Address</h3>
+                        <p>Pasong Buaya 2, Tagle Compound <br>
+                        Imus City, Cavite</p>
+                    </div>
+                </div>
+                <div class="conbox">
+                    <div class="conicon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="context">
+                        <h3>Phone</h3>
+                        <p>09814456275</p>
+                    </div>
+                </div>
+                <div class="conbox">
+                    <div class="conicon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="context">
+                        <h3>Email</h3>
+                        <p>E'S Furn@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <form class="contact-form" action="/submit" method="POST">
+        <h2>Contact Us</h2>
+        <p>Get in touch with Us!</p>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Address</label>
+            <input type="text" id="Address" name="Address" placeholder="Address">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+</body>
+</html>
